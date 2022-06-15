@@ -1,0 +1,424 @@
+@font-face {
+    font-family: "Geosans Light";
+    src: url("fonts/GeosansLight.ttf")
+
+}
+
+@font-face {
+    font-family: "nevis";
+    src: url("fonts/nevis.ttf"),
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul li {
+    list-style-type: none;
+}
+
+input {
+    border: none;
+    cursor: pointer;
+}
+
+.head_nav {
+    width: 100%;
+    background-color: rgb(5, 5, 5);
+    color: white;
+    font-size: 11px;
+    letter-spacing: 0px;
+    line-height: 14px;
+    color: #a4a4a4;
+    font-weight: bold;
+    font-family: "Arial";
+    min-height: 35px;
+    position: relative;
+    display: flex;
+
+}
+
+.head_nav ul {
+    margin-left:15.5%;
+    display: inline-flex;
+    gap: 40px;
+    max-width: 535px;
+
+
+}
+
+.head_nav ul li {
+    display: flex;
+    align-items: center;
+    min-width: 68px;
+    justify-content: center;
+}
+.head_nav ul li:nth-child(6){
+    position: relative;
+    margin-left: 25px;
+}
+.head_nav ul li:nth-child(6)::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin-right: 1rem;
+    background: url(img/icon-rss.png);
+    left: -25px;
+  
+}
+.head_nav ul li:nth-child(5){
+    background-color: rgb(10, 165, 184);
+    color: white;
+    position: relative;
+}
+.head_nav ul li:nth-child(5)::after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-top: 8px solid #0ba6b8;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        left: 50%;
+        margin-left: -8px;
+        bottom: -8px;
+}
+.nav_search {
+    width: auto;
+    display: inline-flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 85px;
+}
+
+.nav_search form input:nth-child(1) {
+    margin-right: 24px;
+    background-color: rgb(39, 39, 39);
+    min-width: 134px;
+    min-height: 16px;
+    border: 1px solid rgb(53, 53, 53);
+}
+
+.btn-search {
+    width: 78px;
+    height: 35px;
+    background-color: rgb(10, 165, 184);
+    color: white;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+    font-size: 37px;
+    letter-spacing: 1px;
+    line-height: 103px;
+    color: #292929;
+    font-weight: 300;
+    font-family: "Geosans Light";
+    filter: drop-shadow(2.5px 4.33px 2.5px rgba(0, 0, 0, 0.13));
+    text-shadow: 2px 3px 11px #888;
+}
+
+.golovna {
+    display: flex;
+    max-width: 945px;
+    max-height: 620px;
+    margin: 0 auto;
+
+}
+
+.golovna_first_col {
+    max-width: 620px;
+    width: 100%;
+    border: 1px solid silver;
+}
+
+.golovna_first_col .header_f {
+    width: 100%;
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 35px;
+    color: #393939;
+    font-weight: bold;
+    font-family: "nevis";
+    height: 47px;
+    border-bottom: 1px solid silver;
+    display: flex;
+    align-items: center;
+    padding-left: 21px;
+    background: linear-gradient(180deg, #fff, #d5d5d5);
+}
+
+.info_text {
+    width: 100%;
+}
+
+.info_text span {
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    color: #393939;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.form_sent {
+    padding-left: 26px;
+}
+
+.form_sent form span {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #393939;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.form_sent form span:nth-of-type(1) {
+    padding-top: 28px;
+    padding-bottom: 6px;
+}
+
+.form_sent form span:nth-of-type(2),
+.form_sent form span:nth-of-type(3) {
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+
+.form_sent form input {
+    border: 1px solid rgb(206, 206, 206);
+}
+
+.short_inp {
+    min-width: 199px;
+    min-height: 23px;
+    background-color: rgb(222, 222, 222);
+}
+
+.form_sent input:last-of-type {
+    min-height: 110px;
+    min-width: 498px;
+    background-color: rgb(222, 222, 222);
+}
+
+.send_form {
+    width: 65px;
+    height: 26px;
+    border: 1px solid rgb(108, 108, 108);
+    margin-top: 14px;
+    margin-bottom: 22px;
+    background: linear-gradient(0deg, rgb(82, 82, 82), rgb(98, 98, 98));
+
+    font-size: 11px;
+    letter-spacing: 0px;
+    line-height: 14px;
+    color: #cccccc;
+    font-weight: bold;
+    font-family: "Arial";
+
+}
+
+.inside_info {
+    width: 565px;
+    height: 160px;
+    border-bottom: 1px solid rgb(194, 194, 194);
+    margin-left: 18px;
+    padding-left: 7px;
+    margin-top: 28px;
+
+}
+
+.inside_info p {
+    padding-top: 28px;
+}
+
+.golovna_second_col {
+    min-width: 298px;
+    min-height: 240px;
+    margin-left: 20px;
+}
+
+.golovna_second_col .nav_sec_col ul li:nth-child(1) {
+    background: linear-gradient(180deg, #fff, #d5d5d5);
+}
+
+.golovna_second_col .nav_sec_col ul li {
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 35px;
+    color: #393939;
+    font-weight: bold;
+    font-family: "nevis";
+    min-height: 47px;
+    background: linear-gradient(0deg, rgb(239, 239, 239), rgb(253, 253, 253) 77%);
+    padding-left: 19px;
+    display: flex;
+    align-items: center;
+    border: 1px solid silver;
+}
+
+.golovna_second_col .nav_sec_col ul li:nth-child(2n) {
+    border-bottom: none;
+    border-top: none;
+}
+
+/* 
+footer go */
+
+.pred_footer {
+    width: 100%;
+    margin-top: 50px;
+    background-color: rgb(4, 4, 4);
+    color: white;
+    display: inline-flex;
+    padding-left: 74px;
+    justify-content: space-around
+}
+
+.pref_foot {
+    width: 300px;
+    min-height: 304px;
+
+    font-size: 14px;
+    line-height: 19px;
+    color: #a0a0a0;
+    font-weight: bold;
+    font-family: "nevis";
+}
+
+.pref_foot .headr:nth-child(1) {
+    display: block;
+    padding-top: 42px;
+
+    border-bottom: 1px dashed white;
+    padding-bottom: 18px;
+}
+
+.pref_foot .ch_date {
+    display: block;
+    font-size: 14px;
+    line-height: 19px;
+    color: #a0a0a0;
+    font-weight: bold;
+    font-family: "Arial";
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.pref_foot p {
+    padding-bottom: 21px;
+    border-bottom: 1px dashed white;
+}
+
+.second_headr {
+    display: inline-block;
+    margin-top: 21px;
+}
+.obgortka .pref_foot .light_font{
+     font-weight: normal;
+ }
+.pref_foot p{
+    font-size: 14px;
+        line-height: 19px;
+       font-weight: normal;
+        font-family: "Arial";
+ }
+
+.pref_foot p:last-child {
+    border-bottom: none;
+    padding-bottom: 50px;
+}
+.obgortka{
+    max-width: 293px;
+}
+.pred_footer .obgortka:nth-child(2),
+.pred_footer .obgortka:nth-child(3) {
+    margin-left: 20px;
+}
+.pictures{
+    display: flex;
+    max-width: 300px;
+    height: 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:25px;
+    margin-top: 3px;
+    
+}
+.pictures .imag {
+    min-width: 83px;
+    min-height: 61px;
+    border: 3px solid silver;
+}
+ 
+.pictures .imag:nth-child(1) {
+
+    background: url(img/pic-flickr1.png) no-repeat;
+
+}
+
+.pictures .imag:nth-child(2) {
+    background: url(img/pic-flickr2.png) no-repeat;
+}
+
+.pictures .imag:nth-child(3) {
+    background: url(img/pic-flickr3.png) no-repeat;
+}
+
+.pictures .imag:nth-child(4) {
+    background: url(img/pic-flickr4.png) no-repeat;
+}
+
+.pictures .imag:nth-child(5) {
+    background: url(img/pic-flickr5.png) no-repeat;
+}
+
+.pictures .imag:nth-child(6) {
+    background: url(img/pic-flickr6.png) no-repeat;
+}
+
+.footer{
+    width: 100%;
+    min-height: 60px;
+    background-color: white;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+font-size: 10px;
+    letter-spacing: 1px;
+    color: #393939;
+    font-family: "Arial";
+}
+.logo_foot{
+    padding-left: 130px;
+}
+.logo_foot .logo_footer{
+   
+        vertical-align: middle;
+        font-size: 22px;
+        font-family: "Geosans Light";
+        color: #232323;
+        text-shadow: 2px 3px 11px #888;
+       
+}
+.rigts{
+    display: inline-block;
+    margin-left:32px;
+}
+.inder_text{
+    text-decoration: underline;
+}
+.last_info{
+    margin-right: 5%;
+}
